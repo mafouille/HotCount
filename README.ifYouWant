@@ -1,0 +1,14 @@
+usage : 
+
+~/dev/comptage/do_it.sh ~/dev/comptage/msh6-3261.txt *260215.fq > comptage-260215.tsv
+
+Rscript ~/dev/comptage/do_it.R ~/data/msh6/comptage-260215.tsv ALL dupC
+Rscript ~/dev/comptage/do_it.R ~/data/msh6/comptage-260215.tsv ALL delC
+
+ou en une seule ligne :
+
+Rscript ~/dev/comptage/do_it.R ~/data/msh6/comptage-260215.tsv ALL dupC delC
+
+
+Le script calcule la significativité des "dupC" puis des "delC" en les comparant aux motifs "ALL"
+
